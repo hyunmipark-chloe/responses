@@ -1,0 +1,317 @@
+/* Cat website */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: helvetica, sans-serif;
+	font-weight: bold;
+	margin: 0;
+	padding: 0.5em;
+	background: #ececec;
+	color: #308c70;
+	font-size: 22px;
+	line-height: 1.2;
+}
+
+/*font-family: helvetica, sans-serif;*/
+
+main {
+	font-family: 'Bungee Shade', cursive;
+	max-width: 35em;
+	margin: 1em auto;
+	padding: 0.3em;
+	perspective: 20em;
+	font-size: 80px;
+	line-height: 0.95;
+}
+
+h1 {
+ 	margin-top: 2px;
+}
+
+h2 {
+	font-family: helvetica, sans-serif;
+	font-size: 30px;
+	color: #f3c2c2;
+    margin-left: 6px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+h3 {
+	font-size: 144px;
+	color: #f3c2c2;
+	margin-left: 5px;
+    margin-top: -4px;
+    margin-bottom: 0;
+}
+
+h4 {
+
+	font-family: 'Bungee Shade', cursive;
+    font-size: 80px;
+    margin-left: 5.3em;
+    margin-top: -7.1em;
+    line-height: 1.9;
+    position: fixed;
+}
+
+h5 {
+
+	font-family: helvetica, sans-serif;
+	font-size: 30px;
+	margin-left: 1.5em;
+
+}
+.bar {
+	background-color: #308c70;
+	width: 2px;
+	height: 139px;
+	margin-left: 0.4em;
+	margin-top: -1.65em;
+}
+
+.bar-main {
+	height: 139px;
+	background: #ececec;
+	margin-top: 2em;
+}
+
+/*h5 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 80px;
+    margin-left: 1.5em;
+    margin-top: 2.9em;
+}
+
+h6 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 80px;
+    margin-left: 1.5em;
+    margin-top: 4.4em;
+} */
+
+section{
+	font-family: 'Bungee Shade', cursive;
+	max-width: 19em;
+	/* padding: 0.3em; */
+	/* perspective: 20em; */
+	/* font-size: 53px; */
+	line-height: 1.2;
+	margin-left: 0em;
+	margin-top: -7em;
+}
+
+
+div {
+	/* margin-left: -3.2em; */
+	margin-left: 4.8em;
+	margin-top: -3.4em;
+	color: #308c70;
+}
+
+
+.link-1 {
+    margin-left: 12.5em;
+    margin-top: -12.35em;
+    max-width: 22em;
+    display: block;
+    font-size: 44px;
+    cursor: pointer;
+}
+
+.link-2 {
+    margin-left: 12.5em;
+    margin-top: 1.5em;
+    display: block;
+    font-size: 44px;
+    max-width: 22em;
+}
+
+.link-3 {
+    margin-left: 12.5em;
+    margin-top: 1.7em;
+    display: block;
+    font-size: 44px;
+    max-width: 22em;
+}
+
+main a:hover {
+ 	color: #f3c2c2;
+}
+
+.toggle section {
+	opacity: 1;
+	transition: all 0.5s;
+}
+
+.show section {
+	opacity: 1;
+	transform: translateX(0);
+
+}
+
+
+.toggle h4 {
+	cursor: pointer;
+	transition: all 0.5s;
+	/* transition: all 0.5s;*/
+}
+.toggle section:hover {
+	color: #f3c2c2;
+}
+
+
+
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+footer {
+	background: none;
+	text-align: left;
+	margin-left: 29px;
+	margin-top: 4em;
+	font-family: helvetica, sans-serif;
+	font-weight: lighter;
+	font-size: 18px;
+	color: #308c70;
+	/*position: fixed;*/
+	z-index: 1;
+
+}
+
+
+
+
+.borders {
+	/*border-radius: 0 10em 1em 0;*/
+	transform-origin: center;
+	transition: transform 0s;
+	width: 20em;
+	z-index: -1;
+}
+
+
+
+
+
+
+nav {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ececec;
+    z-index: 2;
+    padding: 0.5em;
+    display: flex;
+    /* justify-content: flex-end; */
+  	padding-left: 3.2em
+    
+}
+
+.home nav {
+	padding-left: 26.2em
+}
+
+nav a {
+	color: #308c70;
+	margin: 0.5em;
+	text-decoration: none;
+	/*transition:  0.25s;*/
+
+}
+
+nav a:hover {
+	color: #f3c2c2;
+}
+
+.branding {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.active {
+	text-decoration: underline;
+}
+
+.grid {
+	margin-top: 4em;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+}
+
+.item {
+	width: 100%;
+    padding: 0.5em;
+    transition: all 0.5s;
+    margin-left: 0em;
+    margin-top: 0em;
+}
+.item-2 {
+	width: 100%;
+    padding: 0.5em;
+    transition: all 0.5s;
+    margin-left: -0.3em;
+    margin-top: -0.4em;
+}
+.div:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 0.25em;
+	bottom: 0;
+	left: 0;
+	
+}
+ 
+.track-in {
+	letter-spacing: 0.01em;
+}
+
+.track-out {
+	letter-spacing: 0.07em;
+}
+
+.track-out2 {
+	letter-spacing: 0.11em;
+}
+
+
+
+@media (min-width: 700px) {
+	.item, .item-2 {
+		width: 70%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.item, .item-2{
+		width: 90%;
+	}
+}
+
+a {
+ color: #308c70;
+ text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
